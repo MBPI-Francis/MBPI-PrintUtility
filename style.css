@@ -1,0 +1,125 @@
+/*
+   Modern Google-Inspired Stylesheet (Corrected)
+*/
+
+/* --- Main Window --- */
+QDialog {
+    background-color: #f8f9fa; /* A very light Google gray */
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* --- GroupBoxes as "Cards" --- */
+QGroupBox {
+    background-color: #ffffff;
+    border: 1px solid #dadce0; /* Subtle Google gray border */
+    border-radius: 8px;
+    margin-top: 1ex;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3c4043; /* Darker text for titles */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+/* --- Labels --- */
+QLabel {
+    font-size: 13px;
+    color: #5f6368; /* Standard Google secondary text color */
+    padding-bottom: 2px;
+}
+
+/* --- Preview Area --- */
+#previewLabel {
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+
+/* --- Primary "Print" Button --- */
+#printButton {
+    background-color: #1a73e8; /* Google Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#printButton:hover {
+    background-color: #287ae6;
+}
+
+#printButton:pressed {
+    background-color: #1b66c9;
+}
+
+/* --- Secondary Buttons (Previous/Next) --- */
+QPushButton {
+    background-color: #ffffff;
+    color: #1a73e8;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #f1f8ff; /* Very light blue */
+}
+
+QPushButton:pressed {
+    background-color: #d2e3fc;
+}
+
+/* --- Input Fields (ComboBox, LineEdit, SpinBox) --- */
+QComboBox, QLineEdit, QSpinBox, QDoubleSpinBox {
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 13px;
+    color: #3c4043;
+}
+
+/* Interaction feedback for input fields */
+QComboBox:focus, QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus,
+QComboBox:hover, QLineEdit:hover, QSpinBox:hover, QDoubleSpinBox:hover {
+    border-color: #1a73e8;
+}
+
+QComboBox::drop-down {
+    border: none;
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+}
+
+/* --- Radio Buttons --- */
+QRadioButton {
+    font-size: 13px;
+    color: #3c4043;
+    padding: 4px 0;
+}
+
+/* --- ScrollBar --- */
+QScrollBar:vertical {
+    border: none;
+    background: #f8f9fa;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #dadce0;
+    min-height: 20px;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #c1c5c9;
+}
